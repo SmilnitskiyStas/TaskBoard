@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "mkekz7ojtlja0aWlvG7N6Sfpuwap+yaNVko1BvENIlk=",
+  "Source": "TaskBoard-Api",
+  "BasePath": "_content/TaskBoard-Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

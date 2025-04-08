@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "Method": "GetTaskItems",
+    "RelativePath": "api/TaskItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "Method": "CreateTaskItem",
+    "RelativePath": "api/TaskItems",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskItem",
+        "Type": "TaskBoard_Api.Models.TaskItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "Method": "GetTaskItemById",
+    "RelativePath": "api/TaskItems/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "Method": "UpdateTaskItem",
+    "RelativePath": "api/TaskItems/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "taskItem",
+        "Type": "TaskBoard_Api.Models.TaskItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "Method": "DeleteTaskItem",
+    "RelativePath": "api/TaskItems/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

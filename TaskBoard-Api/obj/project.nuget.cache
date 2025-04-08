@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nKc8GmHF3FY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\stass\\source\\repos\\TaskBoard-Api\\TaskBoard-Api\\TaskBoard-Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stass\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "C:\\Users\\stass\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\stass\\.nuget\\packages\\scalar.aspnetcore\\2.1.6\\scalar.aspnetcore.2.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}
