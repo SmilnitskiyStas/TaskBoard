@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "taskItem",
-        "Type": "TaskBoard_Api.Models.TaskItem",
+        "Name": "createTaskItemDto",
+        "Type": "TaskBoard_Api.DTOs.CreateTaskItemDto",
         "IsRequired": true
       }
     ],
@@ -55,8 +55,8 @@
         "IsRequired": true
       },
       {
-        "Name": "taskItem",
-        "Type": "TaskBoard_Api.Models.TaskItem",
+        "Name": "updateTaskItemDto",
+        "Type": "TaskBoard_Api.DTOs.UpdateTaskItemDto",
         "IsRequired": true
       }
     ],

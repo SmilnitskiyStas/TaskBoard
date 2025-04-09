@@ -1,4 +1,5 @@
-﻿using TaskBoard_Api.Models;
+﻿using TaskBoard_Api.DTOs;
+using TaskBoard_Api.Models;
 
 namespace TaskBoard_Api.Services.Interfaces
 {
@@ -6,8 +7,8 @@ namespace TaskBoard_Api.Services.Interfaces
     {
         public IEnumerable<TaskItem> GetAll();
         public TaskItem GetById(int id);
-        public TaskItem Create(TaskItem taskItem);
-        public TaskItem Update(int id, TaskItem taskItem);
+        public TaskItem Create(CreateTaskItemDto createTaskItemDto);
+        public TaskItem Update(int id, UpdateTaskItemDto updateTaskItemDto);
         public void Delete(int id);
     }
 }

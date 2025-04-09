@@ -1,9 +1,12 @@
-﻿namespace TaskBoard_Api.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TaskBoard_Api.DTOs
 {
-    public class TaskItem
+    public class UpdateTaskItemDto
     {
-        public int Id { get; set; }
+        [Required]
         public string Title { get; set; }
+        [MaxLength(200)] 
         public string Description { get; set; }
         public bool IsCompleted { get; set; } = false;
     }

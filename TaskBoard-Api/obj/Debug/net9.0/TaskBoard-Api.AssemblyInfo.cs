@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskBoard-Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5872fbb3ae01f4070193ea10c40494b650f8de40")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskBoard-Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskBoard-Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

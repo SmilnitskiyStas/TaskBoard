@@ -33,3 +33,4 @@ C:\Users\stass\source\repos\TaskBoard-Api\TaskBoard-Api\obj\Debug\net9.0\refint\
 C:\Users\stass\source\repos\TaskBoard-Api\TaskBoard-Api\obj\Debug\net9.0\TaskBoard-Api.pdb
 C:\Users\stass\source\repos\TaskBoard-Api\TaskBoard-Api\obj\Debug\net9.0\TaskBoard-Api.genruntimeconfig.cache
 C:\Users\stass\source\repos\TaskBoard-Api\TaskBoard-Api\obj\Debug\net9.0\ref\TaskBoard-Api.dll
+C:\Users\stass\source\repos\TaskBoard-Api\TaskBoard-Api\obj\Debug\net9.0\TaskBoard-Api.sourcelink.json

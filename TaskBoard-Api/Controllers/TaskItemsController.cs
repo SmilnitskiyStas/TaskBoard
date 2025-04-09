@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TaskBoard_Api.DTOs;
 using TaskBoard_Api.Models;
 using TaskBoard_Api.Services.Interfaces;
 
@@ -10,6 +11,11 @@ namespace TaskBoard_Api.Controllers
     public class TaskItemsController : ControllerBase
     {
         public ITaskService _taskService;
+
+        public TaskItemsController(ITaskService taskService)
+        {
+            _taskService = taskService;
+        }
 
 
         [HttpGet]
@@ -33,22 +39,22 @@ namespace TaskBoard_Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTaskItem([FromBody] TaskItem taskItem)
+        public IActionResult CreateTaskItem([FromBody] CreateTaskItemDto createTaskItemDto)
         {
-            if (taskItem == null)
+            if (createTaskItemDto == null)
             {
                 return BadRequest("Task item cannot be null.");
             }
             // This is a placeholder for the actual implementation
-            taskItem = _taskService.Create(taskItem);
+            TaskItem taskItem = _taskService.Create(createTaskItemDto);
 
             return Ok(taskItem);
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateTaskItem(int id, [FromBody] TaskItem taskItem)
+        public IActionResult UpdateTaskItem(int id, [FromBody] UpdateTaskItemDto updateTaskItemDto)
         {
-            if (taskItem == null)
+            if (updateTaskItemDto == null)
             {
                 return BadRequest("Task item cannot be null.");
             }
@@ -60,11 +66,7 @@ namespace TaskBoard_Api.Controllers
                 return NotFound();
             }
 
-            existingTaskItem.Title = taskItem.Title;
-            existingTaskItem.Description = taskItem.Description;
-            existingTaskItem.IsCompleted = taskItem.IsCompleted;
-
-            taskItem = _taskService.Update(id, existingTaskItem);
+            TaskItem taskItem = _taskService.Update(id, updateTaskItemDto);
 
             return Ok(taskItem);
         }
