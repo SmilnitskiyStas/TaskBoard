@@ -3,9 +3,9 @@ using TaskBoard_Api.Features.Tasks.DTOs;
 
 namespace TaskBoard_Api.Features.Tasks.Validators
 {
-    public class CreateTaskDtoValidator : AbstractValidator<CreateTaskItemDto>
+    public class UpdateTaskDtoValidator : AbstractValidator<UpdateTaskItemDto>
     {
-        public CreateTaskDtoValidator() 
+        public UpdateTaskDtoValidator()
         {
             RuleFor(x => x.Title)
                 .NotEmpty().WithMessage("Name`s require")

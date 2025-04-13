@@ -8,10 +8,10 @@ namespace TaskBoard_Api.Features.Tasks.DTOs
         public string Title { get; set; }
 
         [MaxLength(200)] 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Required]
-        public string Status { get; set; }
+        public TaskStatus Status { get; set; }
 
         [Required]
         public DateTime Created { get; set; }
