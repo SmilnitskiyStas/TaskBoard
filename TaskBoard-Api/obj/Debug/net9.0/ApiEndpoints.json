@@ -1,16 +1,32 @@
 [
   {
-    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "ContainingType": "TaskBoard_Api.Features.Tasks.Controllers.TaskItemsController",
     "Method": "GetTaskItems",
     "RelativePath": "api/TaskItems",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "sort",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "ContainingType": "TaskBoard_Api.Features.Tasks.Controllers.TaskItemsController",
     "Method": "CreateTaskItem",
     "RelativePath": "api/TaskItems",
     "HttpMethod": "POST",
@@ -19,14 +35,14 @@
     "Parameters": [
       {
         "Name": "createTaskItemDto",
-        "Type": "TaskBoard_Api.DTOs.CreateTaskItemDto",
+        "Type": "TaskBoard_Api.Features.Tasks.DTOs.CreateTaskItemDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "ContainingType": "TaskBoard_Api.Features.Tasks.Controllers.TaskItemsController",
     "Method": "GetTaskItemById",
     "RelativePath": "api/TaskItems/{id}",
     "HttpMethod": "GET",
@@ -42,7 +58,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "ContainingType": "TaskBoard_Api.Features.Tasks.Controllers.TaskItemsController",
     "Method": "UpdateTaskItem",
     "RelativePath": "api/TaskItems/{id}",
     "HttpMethod": "PUT",
@@ -56,14 +72,14 @@
       },
       {
         "Name": "updateTaskItemDto",
-        "Type": "TaskBoard_Api.DTOs.UpdateTaskItemDto",
+        "Type": "TaskBoard_Api.Features.Tasks.DTOs.UpdateTaskItemDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskBoard_Api.Controllers.TaskItemsController",
+    "ContainingType": "TaskBoard_Api.Features.Tasks.Controllers.TaskItemsController",
     "Method": "DeleteTaskItem",
     "RelativePath": "api/TaskItems/{id}",
     "HttpMethod": "DELETE",
